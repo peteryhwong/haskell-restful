@@ -24,7 +24,7 @@ target _             = error "Unrecognised target"
 {-
   Response DTO
 -}
-data Country = Country { isoCode :: String, name :: String } deriving (Show, Generic)
+data Country = Country { isoCode :: String, name :: String } deriving (Show, Eq, Generic)
 instance ToJSON Country
 
 targetToCountries :: Target -> [Country]
