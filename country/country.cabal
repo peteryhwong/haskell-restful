@@ -21,6 +21,8 @@ executable country
     bytestring                >= 0.9.1 && < 0.11,
     cassava                   -any,
     containers                -any,
+    HDBC                      -any,
+    HDBC-postgresql           -any,
     snap-core                 -any,
     snap-server               -any,
     vector                    -any
@@ -43,6 +45,8 @@ test-suite country-test
     bytestring                >= 0.9.1 && < 0.11,
     cassava                   -any,
     containers                -any,
+    HDBC                      -any,
+    HDBC-postgresql           -any,
     QuickCheck                == 2.9.2,
     snap-core                 -any,
     snap-server               -any,
