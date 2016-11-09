@@ -23,7 +23,7 @@ toTarget "source"      = Source
 toTarget "destination" = Destination
 toTarget _             = error "Unrecognised target"
 
--- | Data type corresponds to a country
+-- | Data type corresponds to a country.
 data Country = Country { isoCode :: String, name :: String } deriving (Show, Eq, Generic)
 instance ToJSON Country
 
